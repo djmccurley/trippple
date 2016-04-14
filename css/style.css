@@ -28,7 +28,7 @@ img {
 .page-header {
 	background-color: red;
 	color: purple;
-	/*position: relative;*/
+	position: relative;
 	padding: 1em;
 	position: fixed;
 	width: 100%;
@@ -60,4 +60,53 @@ img {
 	padding: 1em;
 }
 
+/* .nav-open */
 
+.nav-open {
+	overflow: hidden;
+}
+
+.nav-open .main-nav {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	min-height: 100%;
+	border: 1px solid red;
+}
+
+.nav-open .page-content {
+	transform: translateX(50%);
+	border: 1px solid purple;
+}
+
+.main-nav {
+	background-color: purple;
+	font-size: 1.5em;
+	font-weight: bold;
+	position: relative;
+}
+
+.main-nav ul {
+	list-style-type: none;
+	margin-top: 1.5em;
+}
+
+.main-nav li {
+	margin: 1em 0;
+}
+
+.main-nav a {
+	color: red;
+	text-decoration: none;
+}
+
+.main-nav .close-nav {
+	font-style: normal;
+	position: absolute;
+	top: .9rem;
+	right: 1em;
+	line-height: 1;
+	color: red;
+}
